@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+:root {
+    --primary-color:rgb(43, 167, 119);
+    --priamry-transition-color:rgb(12, 105, 70);
+}
+body {
+    padding:0px;
+    margin:0px;
+    font-family: 'Roboto';
+    background-color:whitesmoke;
+}
+/* general style */
+textarea {
+    resize: none;
+}
+
+input , textarea {
+    outline: none;
+    box-shadow:none !important;
+    border:1px solid #ccc !important;
+    }
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+ .button-one {
+    background-color: var(--primary-color);
+    padding:10px 20px;
+    width:40%;
+    color:white;
+    border:none;
+    transition:all 2s ease; 
+ }
+ .button-one:hover {
+    background-color: var(--priamry-transition-color);
+    color:white;
+    opacity:0.8;
+ }
+ .heading-one {
+    font-size: bolder;
+    padding:20px 0px
+ }
+ .button-two {
+    background-color: var(--primary-color);
+    padding:2.5px 7px;
+    width:100%;
+    color:white;
+    border:none;
+    transition:all 2s ease; 
+ }
+ .button-three {
+      padding:0px;
+
+ }
+ .primary-color {
+     color:var(--primary-color);
+ }
+ .bg-primary-color {
+     background-color: var(--primary-color);
+ }
+/* navbar */
+.navbar {
+      border-bottom: 2px solid var(--primary-color);
+}
+.navbar .navbar-brand {
+    font-size:28px;
+    font-weight: bolder;
+    color:var(--primary-color);
+    transition: color 1s ease;
+}
+.navbar .navbar-brand:hover {
+    color:var(--priamry-transition-color);
+}
+.navbar .nav-item .nav-link {
+    color:var(--primary-color);
+    font-size: 20px;
+    transition: color 1s ease;
+}
+.navbar .nav-item .nav-link:hover {
+    color:var(--priamry-transition-color);
+
+}
+
+/* banner */
+.banner {
+    background-image: url(../images/banner.jpeg);
+    min-height:100vh;
+    color:white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner-overlay {
+ position: absolute;
+ top:0px;
+ left:0px;
+ background-color: rgba(0,0,0,0.8);
+ width:100%;
+ height:100vh;
+}
+.banner-inner {
+    padding-top:110px;
+}
+.banner .heading-1 {
+    color:var(--primary-color);
+    font-size: bolder;
+    padding:20px 0px
+}
+
+/* Login page  */
+.login {
+    padding-top:130px;
+    width:60%;
+    margin:auto;
+}
+.login h1 {
+    color:var(--primary-color);
+    font-weight: bolder;
+    margin:12px 0px;
+}
+.login .signin {
+    margin-bottom:12px;
+    font-weight: bold;
+}
+.login a {
+    color:var(--primary-color);
+}
+/* developers page */
+.developers {
+    padding-top:100px;
+    width:60%;
+    margin:auto;
+    font-weight:bolder;
+}
+.developers h1 {
+     color:var(--primary-color);
+     font-weight: bolder;
+    margin:12px 0px;
+}
+.developers .profile-image {
+    max-width:200px;
+    border-radius:50%;
+    height:auto;
+}
+.developers .developer {
+    font-size: 1.5rem;
+    font-weight:bolder
+}
+.developers .lang {
+    color:var(--primary-color);
+}
+.developers .search-developer{ 
+    position: relative;
+}
+.developers .submit-search {
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:20%;
+    padding:7px;
+   
+}
+.developers .profile-btn {
+    width:90%;
+}
+/* profile page */
+.profile {
+    padding-top:100px;
+    width:60%;
+    margin:auto;
+    font-weight:bolder;
+}
+.profile .profile-image {
+    width:200px;
+    border-radius: 50%;
+    height:120%;
+}
+.profile .developer-details {
+    background-color: var(--primary-color);
+}
+.profile .experience, .profile .education {
+        min-height:10px;
+}
+
+/* dashboard */
+.dashboard {
+    padding-top:100px;
+    width:60%;
+    margin:auto;
+    font-weight:bolder; 
+}
+.dashboard-image {
+     position: relative;
+     display: none;
+}
+.dashboard-btn {
+     position: absolute;
+     top:0px;
+}
+/* edit profile page */
+.edit-profile {
+    padding-top:100px;
+    width:60%;
+    margin:auto;
+    font-weight:bolder; 
+}
+/* Posts page */
+.posts {
+    padding-top:100px;
+    width:60%;
+    margin:auto;
+    font-weight:bolder; 
+}
+.posts img {
+    width:165px;
+    border-radius: 50%;
+}
+/* Developer comments */
+.comments {
+    padding-top:100px;
+    width:60%;
+    margin:auto;
+    font-weight:bolder; 
+}
+.comments img {
+    width:165px;
+    border-radius: 50%;
+}
+/* Delete page */
+.delete {
+    padding-top:100px;
+    width:60%;
+    margin:auto;
+    font-weight:bolder; 
+}
+/* Responsive */
+@media only screen and (max-width: 600px) {
+.login,.developers, .profile,.dashboard , .edit-profile , .posts, .comments {
+      width:100%;
+}
+.container {
+    width:100%;
+}
+  
+  }
+  @media screen  and (max-width: 979px) /* Tablet */ {
+    .login,.developers, .profile,.dashboard , .edit-profile , .posts, .comments {
+        width:95%;
+  }
+  .container {
+      width:90%;
+  }
+  }
