@@ -9,7 +9,7 @@ This is a simple social network build on PHP
 
 ```php
 
-?php
+<?php
 define('DB_HOST', '*****');
 define('USER_NAME', '*****');
 define('USER_PASS', '*****');
